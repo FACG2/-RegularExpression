@@ -75,7 +75,7 @@ note: if we want to get except some characters we just put dash "-" in the first
   console.log(newstr)
 ```
 
-### online tools
+### on-line tools
 
 1. [RegExr](http://regexr.com/)
 
