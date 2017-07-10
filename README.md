@@ -73,3 +73,5 @@ note: if we want to get except some characters we just put dash "-" in the first
 | quantifier| {1,3} |
 | quantifier| 2     |
 
+
+..* this is an email validator written by regular expression: /[\w.]+@\w{3,}\.[a-z]{2,}/gi
