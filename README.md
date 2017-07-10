@@ -85,6 +85,7 @@ note: if we want to get except some characters we just put dash "-" in the first
 3. [Regex Tester](http://www.regexpal.com/)
 
 
+### Email validator
   * this is an email validator written by regular expression:
 ```javascript
 /[\w.]+@\w{3,}\.[a-z]{2,}/gi
