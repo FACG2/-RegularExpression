@@ -14,7 +14,6 @@ Or calling the constructor function of the RegExp object, as follows:
 - #### Charcter Classes
 |                |         |
 |---------------:| --------|
-| dot            | .       |
 | match any      | [\s\s]  |
 | word           | \w      |
 | not word       | \W      |
