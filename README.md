@@ -79,7 +79,7 @@ note: if we want to get except some characters we just put dash "-" in the first
 | quantifier| {1,3} |
 | quantifier| 2     |
 
-### on-line tools
+### online tools
 
 1. [RegExr](http://regexr.com/)
 
