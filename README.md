@@ -1,10 +1,10 @@
 # Regular Expressions
 
-..1 ### What is Regular Expressions ?
+### What is Regular Expressions ?
  
   Regular expressions are patterns used to match character combinations in strings. 
 
-..1 ### Pattern creation and repitions:
+### Pattern creation and repitions:
   Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:
 var re = /ab+c/;
 
@@ -12,6 +12,8 @@ Or calling the constructor function of the RegExp object, as follows:
   var re = new RegExp('ab+c');
 
 #### Charcter Classes
+|                |         |
+|---------------:| --------|
 | dot            | .       |
 | match any      | [\s\s]  |
 | word           | \w      |
@@ -25,12 +27,16 @@ Or calling the constructor function of the RegExp object, as follows:
 | range          | [A-Z]   |
 
 #### Anchors
+|                   |       |
+| -----------------:|:------|
 | beginning         | ^     |
 | end               | $     |
 | word boundary     | \b    |
 | not word boundary | \B    |
 
 #### Escaped Characters
+|                 |         |
+| ---------------:|:--------|
 | tab             | \t      |
 | line feed       | \n      |
 | carriage return | \r      |
@@ -40,6 +46,8 @@ if we want to get ont of these characters ., \ , + , * , ? , ^ , $ , ( , { , [ ,
 just put backslash "\" before it.
 
 #### Flags
+|                |       |
+|---------------:|:------|
 | ignore case    | i     |
 | global search  | g     |
 | multiline      | m     |
@@ -49,15 +57,17 @@ Expression flags change how the expression is interpreted. There are three flags
 note: if we want to get except some characters we just put dash "-" in the first of [] and we write these characters we wan to ignore.
 
 #### Groups & Lookaround
-** capturing group ** (ABC)
+**capturing group** (ABC)
 
-** Example: **
+**Example:**
   var re = /(\w+)\s(\w+)/;
   var str = 'John Smith';
   var newstr = str.replace(re, '$2, $1');
   console.log(newstr)
 
 #### Quantifiers & Alternation
+|           |       |
+|----------:|:------|
 | plus      | +     |
 | star      | *     |
 | quantifier| {1,3} |
