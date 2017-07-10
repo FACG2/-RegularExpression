@@ -74,8 +74,24 @@ note: if we want to get except some characters we just put dash "-" in the first
 | quantifier| {1,3} |
 | quantifier| 2     |
 
+### on-line tools
 
-..* this is an email validator written by regular expression:
+1. [RegExr](http://regexr.com/)
+
+   We recommend using it because of it's many advantges like: syntax highlighting, contextual help, video tutorial.
+
+2. [Scriptular](http://scriptular.com/)
+
+3. [Regex Tester](http://www.regexpal.com/)
+
+
+  * this is an email validator written by regular expression:
 ```javascript
 /[\w.]+@\w{3,}\.[a-z]{2,}/gi
 ```
+
+
+### Resources
+  * [Regular Expressions MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)  
+  * [30 Useful Tools and Resources](http://www.hongkiat.com/blog/regular-expression-tools-resources/)
+  * [online course](https://www.youtube.com/watch?v=7DG3kCDx53c&list=PLRqwX-V7Uu6YEypLuls7iidwHMdCM6o2w)
