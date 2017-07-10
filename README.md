@@ -35,13 +35,7 @@ Or calling the constructor function of the RegExp object, as follows:
 | word boundary     | \b    |
 | not word boundary | \B    |
 
-- #### Escaped Characters
-|                 |         |
-| ---------------:|:--------|
-| tab             | \t      |
-| line feed       | \n      |
-| carriage return | \r      |
-| null            | \0      |
+
 
 if we want to get one of these characters ., \ , + , * , ? , ^ , $ , ( , { , [ , ] , } , ) , | , /
 just put backslash "\\" before it.
@@ -61,6 +55,15 @@ note: if we want to get except some characters we just put dash "-" in the first
 /[-asd]/
 ```
 
+- #### Quantifiers & Alternation
+|           |       |
+|----------:|:------|
+| plus      | +     |
+| star      | *     |
+| quantifier| {1,3} |
+| quantifier| {2}   |
+
+
 - #### Groups & Lookaround
 **capturing group** (ABC)
 
@@ -71,13 +74,6 @@ note: if we want to get except some characters we just put dash "-" in the first
   var newstr = str.replace(re, '$2, $1');
   console.log(newstr)
 ```
-- #### Quantifiers & Alternation
-|           |       |
-|----------:|:------|
-| plus      | +     |
-| star      | *     |
-| quantifier| {1,3} |
-| quantifier| 2     |
 
 ### online tools
 
