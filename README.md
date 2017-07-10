@@ -22,7 +22,7 @@ Or calling the constructor function of the RegExp object, as follows:
 | not digit      | \D      |
 | whitespace     | \s      |
 | not whitespace | \S      |
-| character set  | \S      |
+| character set  | [ABC]   |
 | negated set    | [^ABC]  |
 | range          | [A-Z]   |
 
