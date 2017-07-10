@@ -1,6 +1,6 @@
 # Regular Expressions
 
-### What is Regular Expressions ?
+- ### What is Regular Expressions ?
  
   Regular expressions are patterns used to match character combinations in strings. 
 
@@ -11,7 +11,7 @@ var re = /ab+c/;
 Or calling the constructor function of the RegExp object, as follows:
   var re = new RegExp('ab+c');
 
-#### Charcter Classes
+- #### Charcter Classes
 |                |         |
 |---------------:| --------|
 | dot            | .       |
@@ -26,7 +26,7 @@ Or calling the constructor function of the RegExp object, as follows:
 | negated set    | [^ABC]  |
 | range          | [A-Z]   |
 
-#### Anchors
+- #### Anchors
 |                   |       |
 | -----------------:|:------|
 | beginning         | ^     |
@@ -34,7 +34,7 @@ Or calling the constructor function of the RegExp object, as follows:
 | word boundary     | \b    |
 | not word boundary | \B    |
 
-#### Escaped Characters
+- #### Escaped Characters
 |                 |         |
 | ---------------:|:--------|
 | tab             | \t      |
@@ -45,7 +45,7 @@ Or calling the constructor function of the RegExp object, as follows:
 if we want to get ont of these characters ., \ , + , * , ? , ^ , $ , ( , { , [ , ] , } , ) , | , /
 just put backslash "\" before it.
 
-#### Flags
+- #### Flags
 |                |       |
 |---------------:|:------|
 | ignore case    | i     |
@@ -56,16 +56,17 @@ Expression flags change how the expression is interpreted. There are three flags
 
 note: if we want to get except some characters we just put dash "-" in the first of [] and we write these characters we wan to ignore.
 
-#### Groups & Lookaround
+- #### Groups & Lookaround
 **capturing group** (ABC)
 
 **Example:**
+```javascript
   var re = /(\w+)\s(\w+)/;
   var str = 'John Smith';
   var newstr = str.replace(re, '$2, $1');
   console.log(newstr)
-
-#### Quantifiers & Alternation
+```
+- #### Quantifiers & Alternation
 |           |       |
 |----------:|:------|
 | plus      | +     |
@@ -74,4 +75,7 @@ note: if we want to get except some characters we just put dash "-" in the first
 | quantifier| 2     |
 
 
-..* this is an email validator written by regular expression: /[\w.]+@\w{3,}\.[a-z]{2,}/gi
+..* this is an email validator written by regular expression:
+```javascript
+/[\w.]+@\w{3,}\.[a-z]{2,}/gi
+```
