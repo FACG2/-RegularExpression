@@ -6,15 +6,17 @@
 
 ### Pattern creation and repitions:
   Using a regular expression literal, which consists of a pattern enclosed between slashes, as follows:
+ ```javascript
 var re = /ab+c/;
+```
 
 Or calling the constructor function of the RegExp object, as follows:
+```javascript
   var re = new RegExp('ab+c');
-
+```
 - #### Charcter Classes
 |                |         |
 |---------------:| --------|
-| match any      | [\s\s]  |
 | word           | \w      |
 | not word       | \W      |
 | digit          | \d      |
@@ -41,19 +43,23 @@ Or calling the constructor function of the RegExp object, as follows:
 | carriage return | \r      |
 | null            | \0      |
 
-if we want to get ont of these characters ., \ , + , * , ? , ^ , $ , ( , { , [ , ] , } , ) , | , /
-just put backslash "\" before it.
+if we want to get one of these characters ., \ , + , * , ? , ^ , $ , ( , { , [ , ] , } , ) , | , /
+just put backslash "\\" before it.
 
 - #### Flags
 |                |       |
 |---------------:|:------|
 | ignore case    | i     |
 | global search  | g     |
-| multiline      | m     |
 
-Expression flags change how the expression is interpreted. There are three flags in JS: i, g, and m. Flags follow the closing backslash of the expression (ex. /.+/igm ).
+Expression flags change how the expression is interpreted. There are three flags in JS: i, g, and m. Flags follow the closing backslash of the expression (ex. /.+/ig ).
 
 note: if we want to get except some characters we just put dash "-" in the first of [] and we write these characters we wan to ignore.
+
+**Example**
+```javascript
+/[-asd]/
+```
 
 - #### Groups & Lookaround
 **capturing group** (ABC)
